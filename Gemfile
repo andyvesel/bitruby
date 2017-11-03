@@ -5,13 +5,17 @@ gem 'data_mapper'
 gem 'json'
 gem 'openssl'
 gem 'rest-client'
-gem 'sinatra'
+gem 'rubocop'
 
 group :development, :test do
   gem 'byebug'
   gem 'dm-sqlite-adapter'
+end
+
+group :test do
   gem 'rspec'
-  gem 'rubocop'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :production do
