@@ -9,3 +9,6 @@ A bot that lets you trade bitcoin in your sleep
   - Endpoints to buy bitcoin
   - Endpoints to sell bitcoin
  
+- Second part:
+  - Set up account on Heroku and do the first deploy
+  - Search about times series analysis and ruby
