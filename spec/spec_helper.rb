@@ -1,6 +1,5 @@
 require 'rack/test'
 require 'rspec'
-require 'sinatra'
 require 'vcr'
 
 ENV['RACK_ENV'] = 'test'
@@ -18,5 +17,4 @@ RSpec.configure { |c| c.include RSpecMixin }
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/cassettes'
   config.hook_into :webmock
-  config.configure_rspec_metadata!
 end

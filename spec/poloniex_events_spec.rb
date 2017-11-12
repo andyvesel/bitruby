@@ -1,11 +1,12 @@
 require File.expand_path '../spec_helper.rb', __FILE__
 require 'poloniex_events'
-require 'byebug'
 
 describe PoloniexEvents, 'test events module' do
   context 'test get requests' do
     it '.balances' do
-      expect(subject.balances).not_to be nil
+      VCR.use_cassette('events/balances', record: :new_episodes) do
+        expect(subject.balances).not_to be nil
+      end
     end
   end
 
@@ -15,7 +16,9 @@ describe PoloniexEvents, 'test events module' do
     let(:rate) { 77_700 }
 
     it '.trade_history' do
-      expect(subject.trade_history(currency_pair)).not_to be nil
+      VCR.use_cassette('events/trade_history', record: :new_episodes) do
+        expect(subject.trade_history(currency_pair)).not_to be nil
+      end
     end
   end
 end

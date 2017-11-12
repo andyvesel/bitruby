@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.poloniex.com/tradingApi
+    body:
+      encoding: UTF-8
+      string: params[command]=returnBalances&params[nonce]=0008&headers[Key]=6UFI4JGT-H7AWUHW8-95YVHTJ2-NEY7WX3S&headers[Sign]=4b937bcea83b5702ec8c955caf6339a2a21b094cb99e2189b465b660fe4fbbf424e2281cd8d30364549fc33fd11b57ce61557ad0f4bef2e8cded5d86f7d879be
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.0.0 x86_64) ruby/2.4.1p111
+      Content-Length:
+      - '241'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Host:
+      - www.poloniex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 12 Nov 2017 19:03:19 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dbc39b0dda244f6702fdcfd1ee61b394e1510513398; expires=Mon, 12-Nov-18
+        19:03:18 GMT; path=/; domain=.poloniex.com; HttpOnly
+      Cache-Control:
+      - private
+      Content-Encoding:
+      - gzip
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3bcbc023ba6c4bb7-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA6tWSi0qyi9SslLyzCtLzMlMUXAM8FTITq2M0S9OTS5KLVEoSMws0lOqBQCRKUZDKQAAAA==
+    http_version: 
+  recorded_at: Sun, 12 Nov 2017 19:06:30 GMT
+recorded_with: VCR 3.0.3
