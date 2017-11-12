@@ -3,14 +3,14 @@ require 'poloniex_connection'
 
 module PoloniexEvents
   def self.balances
-    PoloniexConnection.post command: Constants::BALANCES
+    PoloniexConnection.post command: Constants::Events::Post::BALANCES
   end
 
   def self.trade_history(currency_pair, start = 0, end_time = Time.now.to_i)
-    PoloniexConnection.post command: Constants::TRADE_HISTORY, currencyPair: currency_pair, start: start, end: end_time
+    PoloniexConnection.post command: Constants::Events::Get::TRADE_HISTORY, currencyPair: currency_pair, start: start, end: end_time
   end
 
   def self.volume
-    PoloniexConnection.get command: Constants::VOLUME
+    PoloniexConnection.get command: Constants::Events::Post::VOLUME
   end
 end

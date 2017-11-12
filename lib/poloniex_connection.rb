@@ -5,11 +5,11 @@ require 'rest-client'
 
 module PoloniexConnection
   def self.get(params = {})
-    rest_client[Constants::PUBLIC].get params: params
+    rest_client[Constants::Connection::PUBLIC].get params: params
   end
 
   def self.post(params = {})
-    rest_client[Constants::TRADING_API].post params: params, headers: headers(params)
+    rest_client[Constants::Connection::TRADING_API].post params: params, headers: headers(params)
   end
 
   def self.headers(params)
@@ -20,9 +20,9 @@ module PoloniexConnection
   end
 
   def self.create_sha512_key(params)
-    params[:nonce] = Constants::NOUCE
+    params[:nonce] = Constants::Connection::NOUCE
 
-    OpenSSL::HMAC.hexdigest(Constants::SHA512, ENV['POLONIEX_SECRET_KEY'], encoded_data(params))
+    OpenSSL::HMAC.hexdigest(Constants::Connection::SHA512, ENV['POLONIEX_SECRET_KEY'], encoded_data(params))
   end
 
   def self.encoded_data(params)
@@ -30,6 +30,6 @@ module PoloniexConnection
   end
 
   def self.rest_client
-    RestClient::Resource.new(Constants::POLONIEX)
+    RestClient::Resource.new(Constants::Connection::POLONIEX)
   end
 end
