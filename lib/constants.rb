@@ -12,16 +12,16 @@ module Constants
       BALANCES = 'returnBalances'.freeze
       BUY = 'buy'.freeze
       SELL = 'sell'.freeze
-      VOLUME = 'return24hVolume'.freeze
+      TRADE_HISTORY = 'returnTradeHistory'.freeze
     end
 
     module Get
-      TICKER = 'returnTicker'.freeze
-      ORDER_BOOK = 'returnOrderBook'.freeze
-      TRADE_HISTORY = 'returnTradeHistory'.freeze
       CHART_DATA = 'returnChartData'.freeze
       CURRENCIES = 'returnCurrencies'.freeze
       LOAN_ORDERS = 'returnLoanOrders'.freeze
+      ORDER_BOOK = 'returnOrderBook'.freeze
+      TICKER = 'returnTicker'.freeze
+      VOLUME = 'return24hVolume'.freeze
     end
   end
 end

@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.poloniex.com/public?command=returnLoanOrders&currency=BTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.0.0 x86_64) ruby/2.4.1p111
+      Host:
+      - www.poloniex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 12 Nov 2017 22:44:11 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1f92bdb282724bc60b8c43c3510904341510526650; expires=Mon, 12-Nov-18
+        22:44:10 GMT; path=/; domain=.poloniex.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Content-Encoding:
+      - gzip
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3bcd03b00fc88174-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA62XTWrkQAyF7+J1Y/Svqr7DnCBkYUgnZJEO9GRgIOTuU0kzEKscNzL2zoX5kJ6eVPL78Pr4eLr8Ho5378NlejsNxwFGAEAqFYbDML28/jm/XU+xMlSQdnqZzk+nX8/n4Uj/X6a/7eXjECk1UowUPp8Mha/fz2JBLlJSsTBGSjH/PNUcBTlkBF6wEOcoZHtQNOpiVJjFUxSa61JHZWQrpf5M8SVK0AXUimVrRFEXFipFNecX4hgLooklK02igeIAJJKk7FMjCxlhRXHQZCy1zinErc3dcury3C/kIykbS1nB6BImFkmoGnsupdYDgdK0rfZlowQl2m6TvNwZhgumhx3vYhgudYeMZF5qG82wVKtJSqwRClObgJikeNfUaAxJitIeunikfGUkJUXRubrIo1R3b12wgoElDsVO0toGZ8532lVpizLaVclEux6Q7xRZoMR+FID82qAUe2BTlcyi74C0apLiZQ91S5xTWzKyMMBHp7bYAdHPFFuwnXW2QyhUywpmKZhYJGBsV4kmKRJiaXtdXZcXl1KSeM1u0tei79pa07kX4WY0sdrtzNv0nY8H/o7hnuJhytDYVjXwurZrLlzXDnuMB8duk29znddWhyVK5xlz6QTWWxlxlLeBUTG3sXp3XSO0zkheka6eN979YXg4vUznh/7/rXVz/Nux63FmjWiRxVEBbbfmGxrdf/wDeXjIi1gOAAA=
+    http_version: 
+  recorded_at: Sun, 12 Nov 2017 22:47:23 GMT
+recorded_with: VCR 3.0.3
