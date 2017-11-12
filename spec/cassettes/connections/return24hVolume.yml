@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.poloniex.com/public?command=return24hVolume
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.0.0 x86_64) ruby/2.4.1p111
+      Host:
+      - www.poloniex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 12 Nov 2017 19:03:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=de8670691cfa1c7bf8a7d810bce731cac1510513397; expires=Mon, 12-Nov-18
+        19:03:17 GMT; path=/; domain=.poloniex.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Content-Encoding:
+      - gzip
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3bcbc01e5d4e4b63-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Sun, 12 Nov 2017 19:06:29 GMT
+recorded_with: VCR 3.0.3
