@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 12 Nov 2017 22:44:11 GMT
+      - Mon, 13 Nov 2017 03:41:01 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -29,8 +29,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d1f92bdb282724bc60b8c43c3510904341510526650; expires=Mon, 12-Nov-18
-        22:44:10 GMT; path=/; domain=.poloniex.com; HttpOnly
+      - __cfduid=d59e5e09007b6d088f0362bb9ef2e519e1510544460; expires=Tue, 13-Nov-18
+        03:41:00 GMT; path=/; domain=.poloniex.com; HttpOnly
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -40,11 +40,11 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 3bcd03b00fc88174-GRU
+      - 3bceb67fea3b814a-GRU
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA62XTWrkQAyF7+J1Y/Svqr7DnCBkYUgnZJEO9GRgIOTuU0kzEKscNzL2zoX5kJ6eVPL78Pr4eLr8Ho5378NlejsNxwFGAEAqFYbDML28/jm/XU+xMlSQdnqZzk+nX8/n4Uj/X6a/7eXjECk1UowUPp8Mha/fz2JBLlJSsTBGSjH/PNUcBTlkBF6wEOcoZHtQNOpiVJjFUxSa61JHZWQrpf5M8SVK0AXUimVrRFEXFipFNecX4hgLooklK02igeIAJJKk7FMjCxlhRXHQZCy1zinErc3dcury3C/kIykbS1nB6BImFkmoGnsupdYDgdK0rfZlowQl2m6TvNwZhgumhx3vYhgudYeMZF5qG82wVKtJSqwRClObgJikeNfUaAxJitIeunikfGUkJUXRubrIo1R3b12wgoElDsVO0toGZ8532lVpizLaVclEux6Q7xRZoMR+FID82qAUe2BTlcyi74C0apLiZQ91S5xTWzKyMMBHp7bYAdHPFFuwnXW2QyhUywpmKZhYJGBsV4kmKRJiaXtdXZcXl1KSeM1u0tei79pa07kX4WY0sdrtzNv0nY8H/o7hnuJhytDYVjXwurZrLlzXDnuMB8duk29znddWhyVK5xlz6QTWWxlxlLeBUTG3sXp3XSO0zkheka6eN979YXg4vUznh/7/rXVz/Nux63FmjWiRxVEBbbfmGxrdf/wDeXjIi1gOAAA=
+        H4sIAAAAAAAAA62X22obQQyG32WvzaLDaCT5HfoEJReGOKUXccBNoRDy7pVtClnNslSJ924X9mN0+n/N2/Ty9HQ8/5r239+m8+H1OO0nmCEeQ4BpNx2eX36fXq9fsYk59svX8+H04/jt52na07+Xw594ed9limQKeEM3pgrFPVOoNzBtrUBBoOEsCNwMtEThgdJN0KFXKGQDhRFVWiW7SENegJ3UqJSXCGhB4bkLMPciJfULtpldVUGlhqGeG0YEBSoNExShe1DU7kAZ2s4buRtZkSKL9M6IRAzENcqQXcTGDbBESSNAGPMYhTYqzUBgZJzHOKHXKDmkbiyMVgxJssI00CZU0oZI5DIxPKNZgHSj1ryCySER3J7aYXJIyM6iWktM6GMuUtSIsFakZANIszaK8bItDIycvuSExkQD974lm30Ng8MYgIeA1fr3ppCLBHeQ5jXd1GVIPpO4KeoGZaVlNEcUVfKhZeQjRUZKciWaTWMEcMsh19JruWfCqiXOWNNNHwwFOxF02BimtdP4VSO/WiZ3H1oGxbgkEC1ZLeIs2IjZNkxyJaYG95CrBkNMTYmi+0oUzOvDZe8jx2JIlEc7pFMYdMvg1jCEX692oyG/sT5aS6bC20MZlGRwSNqGodSPFB0pyW37HBtIDNRW563lN3mTRUjEbrihebiKyaYdywzFdJfyO7hKGLZ577XOy64iczP26MhiTEKDU36iZ0R0uaHBJ1y7Scc65WE3PR6fD6fHtYsc5P3zomV+07P/voL1rFw+x9xT3FgqhQ/ZGm4sVE7S9ZdlktQ91nXeLNjD+1+DLdau7g4AAA==
     http_version: 
-  recorded_at: Sun, 12 Nov 2017 22:47:23 GMT
+  recorded_at: Mon, 13 Nov 2017 03:44:13 GMT
 recorded_with: VCR 3.0.3

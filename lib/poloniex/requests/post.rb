@@ -4,28 +4,59 @@ require_relative '../connection'
 module Poloniex
   module Requests
     module Post
+      # Methods
+      #
       def self.balances
-        Poloniex::Connection.post command: Constants::Events::Post::BALANCES
+        Poloniex::Connection.post(command: Constants::Events::Post::BALANCES)
       end
 
-      def self.trade_history(currency_pair, start = 0, end_time = Time.now.to_i)
-        Poloniex::Connection.post command: Constants::Events::Post::TRADE_HISTORY,
-                                  currencyPair: currency_pair,
-                                  start: start,
-                                  end: end_time
+      def self.buy(params = {})
+        Poloniex::Connection.post(buy_hash(params))
       end
 
-      BUY = 'buy'.freeze
-      CANCEL_ORDER = 'cancelOrder'.freeze
-      OPEN_ORDER = 'returnOpenOrders'.freeze
-      ORDER_TRADES = 'returnOrderTrades'.freeze
-      SELL = 'sell'.freeze
-      
+      def self.sell(params = {})
+        Poloniex::Connection.post(sell_hash(params))
+      end
+
+      def self.trade_history(params = {})
+        Poloniex::Connection.post(trade_history_hash(params))
+      end
+
+      # Hashes
+      #
+      def self.buy_hash(params)
+        {
+          command: Constants::Events::Post::BUY,
+          currencyPair: params[:currencyPair],
+          rate: params[:rate],
+          amount: params[:amount]
+        }
+      end
+
+      def self.sell_hash(params)
+        {
+          command: Constants::Events::Post::SELL,
+          currencyPair: params[:currencyPair],
+          rate: params[:rate],
+          amount: params[:amount]
+        }
+      end
+
+      def self.trade_history_hash(params)
+        {
+          command: Constants::Events::Post::TRADE_HISTORY,
+          currencyPair: params[:currency_pair],
+          start: params[:start],
+          end: params[:end_time]
+        }
+      end
+
       def self.returnOpenOrders; end
+
       def self.returnTradeHistory; end
+
       def self.returnOrderTrades; end
-      def self.buy; end
-      def self.sell; end
+
       def self.cancelOrder; end
     end
   end

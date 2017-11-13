@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.poloniex.com/public?command=returnOrderBook&currencyPair=BTC_XMR&depth=10
+    uri: https://www.poloniex.com/public?command=returnOrderBook&currencyPair&depth=10
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 12 Nov 2017 22:44:12 GMT
+      - Mon, 13 Nov 2017 03:40:19 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -29,8 +29,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d984791bf346f67d8b345588c6687e9d41510526651; expires=Mon, 12-Nov-18
-        22:44:11 GMT; path=/; domain=.poloniex.com; HttpOnly
+      - __cfduid=dcb7a8d0ee5b4b5220a9fd0b6db8832001510544419; expires=Tue, 13-Nov-18
+        03:40:19 GMT; path=/; domain=.poloniex.com; HttpOnly
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -40,11 +40,11 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 3bcd03b5e92a4a84-GRU
+      - 3bceb57c2fe74c18-GRU
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA1WQS04DQQxE79LrUct/t3MALhFlASKLCAkEswNx91QGkensLD+XXa6f9ry+re1wPDbqJBQmqm1BbUO9yE7LPxksoy3M3T3mrsY2n5GZPO4kqbQwn12tUs19RiZA3lNdiUsfEK7c7it0o3ZizhCBOAWxT5oqNayj6CEs6ra7GORGNxWHWOQuGhSxGVcSLQ87nZb2cnmdsxAnbkt619h9BLrYyNGzbApCiLCPk7pkBJlM0YE5FmUXfezCtnKHsUpLuf8a+BHIvPvAS1Y8IaqEqgeniYy8E4ev7VUNrqg9A5fxB+BQMbPfcWbZJMQIzkAQwmV9+vr4Pr+3QwNr6/mzHZCdKg7a7xWVCKWmMQIAAA==
+        H4sIAAAAAAAAA6tWSi0qyi9SslLyzCtLzMlMUUguLSpKzUuuVChIzCzSU6oFAPQ7/hkiAAAA
     http_version: 
-  recorded_at: Sun, 12 Nov 2017 22:47:24 GMT
+  recorded_at: Mon, 13 Nov 2017 03:43:32 GMT
 recorded_with: VCR 3.0.3

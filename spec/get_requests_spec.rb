@@ -12,7 +12,7 @@ describe Poloniex::Requests::Get, 'test get request events' do
   context 'with valid params' do
     it '.chart_data' do
       VCR.use_cassette('get_requests/chart_data', record: :once) do
-        expect(subject.chart_data(currency, start, end_time, period)).not_to be nil
+        expect(subject.chart_data(currency: currency, start: start, end_time: end_time, period: period)).not_to be nil
       end
     end
 
@@ -24,13 +24,13 @@ describe Poloniex::Requests::Get, 'test get request events' do
 
     it '.loan_orders' do
       VCR.use_cassette('get_requests/loan_orders', record: :once) do
-        expect(subject.loan_orders(currency_pair)).not_to be nil
+        expect(subject.loan_orders(currency_pair: currency_pair)).not_to be nil
       end
     end
 
     it '.order_book' do
       VCR.use_cassette('get_requests/order_book', record: :once) do
-        expect(subject.order_books(currency, depth)).not_to be nil
+        expect(subject.order_books(currency: currency, depth: depth)).not_to be nil
       end
     end
 
