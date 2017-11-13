@@ -1,4 +1,4 @@
-# Bitruby
+# Bitruby <img src="https://travis-ci.org/vbrazo/bitruby.svg?branch=master">
 A bot that lets you trade cryptocurrencies in your sleep
 
 # Roadmap
