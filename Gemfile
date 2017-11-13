@@ -18,7 +18,3 @@ group :test do
   gem 'vcr'
   gem 'webmock'
 end
-
-group :production do
-  gem 'dm-postgres-adapter'
-end

@@ -36,9 +36,6 @@ GEM
       dm-core (~> 1.2.0)
     dm-observer (1.2.0)
       dm-core (~> 1.2.0)
-    dm-postgres-adapter (1.2.0)
-      dm-do-adapter (~> 1.2.0)
-      do_postgres (~> 0.10.6)
     dm-serializer (0.10.0)
     dm-sqlite-adapter (1.2.0)
       dm-do-adapter (~> 1.2.0)
@@ -48,8 +45,6 @@ GEM
     dm-types (0.10.0)
     dm-validations (1.2.0)
       dm-core (~> 1.2.0)
-    do_postgres (0.10.17)
-      data_objects (= 0.10.17)
     do_sqlite3 (0.10.17)
       data_objects (= 0.10.17)
     domain_name (0.5.20170404)
@@ -117,7 +112,6 @@ DEPENDENCIES
   addressable
   byebug
   data_mapper
-  dm-postgres-adapter
   dm-sqlite-adapter
   json
   openssl
