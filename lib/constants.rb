@@ -1,13 +1,30 @@
 module Constants
-  BALANCES = 'returnBalances'.freeze
-  BUY = 'buy'.freeze
-  TRADE_HISTORY = 'returnTradeHistory'.freeze
-  SELL = 'sell'.freeze
-  VOLUME = 'return24hVolume'.freeze
+  module Connection
+    NOUCE = '0008'.freeze
+    POLONIEX = 'https://www.poloniex.com'.freeze
+    PUBLIC = 'public'.freeze
+    TRADING_API = 'tradingApi'.freeze
+    SHA512 = 'sha512'.freeze
+  end
 
-  NOUCE = '0008'.freeze
-  POLONIEX = 'https://www.poloniex.com'.freeze
-  PUBLIC = 'public'.freeze
-  TRADING_API = 'tradingApi'.freeze
-  SHA512 = 'sha512'.freeze
+  module Events
+    module Post
+      BALANCES = 'returnBalances'.freeze
+      BUY = 'buy'.freeze
+      CANCEL_ORDER = 'cancelOrder'.freeze
+      OPEN_ORDER = 'returnOpenOrders'.freeze
+      ORDER_TRADES = 'returnOrderTrades'.freeze
+      SELL = 'sell'.freeze
+      TRADE_HISTORY = 'returnTradeHistory'.freeze
+    end
+
+    module Get
+      CHART_DATA = 'returnChartData'.freeze
+      CURRENCIES = 'returnCurrencies'.freeze
+      LOAN_ORDERS = 'returnLoanOrders'.freeze
+      ORDER_BOOK = 'returnOrderBook'.freeze
+      TICKER = 'returnTicker'.freeze
+      VOLUME = 'return24hVolume'.freeze
+    end
+  end
 end

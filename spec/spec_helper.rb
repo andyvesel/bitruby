@@ -6,13 +6,9 @@ ENV['RACK_ENV'] = 'test'
 
 module RSpecMixin
   include Rack::Test::Methods
-
-  def app
-    Sinatra::Application
-  end
 end
 
-RSpec.configure { |c| c.include RSpecMixin }
+RSpec.configure { |config| config.include RSpecMixin }
 
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/cassettes'

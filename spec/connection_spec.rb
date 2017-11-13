@@ -1,7 +1,7 @@
 require File.expand_path '../spec_helper.rb', __FILE__
-require 'poloniex_connection'
+require 'poloniex/connection'
 
-describe PoloniexConnection, 'test connection module' do
+describe Poloniex::Connection, 'test connection module' do
   context '.get' do
     let(:params) do
       {
@@ -11,7 +11,7 @@ describe PoloniexConnection, 'test connection module' do
 
     it 'volume event' do
       expect(
-        VCR.use_cassette('connections/return24hVolume', record: :new_episodes) do
+        VCR.use_cassette('connections/return24hVolume', record: :once) do
           subject.get(params)
         end
       ).not_to be nil

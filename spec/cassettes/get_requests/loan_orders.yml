@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.poloniex.com/public?command=returnLoanOrders&currency=BTC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.0.0 x86_64) ruby/2.4.1p111
+      Host:
+      - www.poloniex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Nov 2017 03:41:01 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d59e5e09007b6d088f0362bb9ef2e519e1510544460; expires=Tue, 13-Nov-18
+        03:41:00 GMT; path=/; domain=.poloniex.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Content-Encoding:
+      - gzip
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3bceb67fea3b814a-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA62X22obQQyG32WvzaLDaCT5HfoEJReGOKUXccBNoRDy7pVtClnNslSJ924X9mN0+n/N2/Ty9HQ8/5r239+m8+H1OO0nmCEeQ4BpNx2eX36fXq9fsYk59svX8+H04/jt52na07+Xw594ed9limQKeEM3pgrFPVOoNzBtrUBBoOEsCNwMtEThgdJN0KFXKGQDhRFVWiW7SENegJ3UqJSXCGhB4bkLMPciJfULtpldVUGlhqGeG0YEBSoNExShe1DU7kAZ2s4buRtZkSKL9M6IRAzENcqQXcTGDbBESSNAGPMYhTYqzUBgZJzHOKHXKDmkbiyMVgxJssI00CZU0oZI5DIxPKNZgHSj1ryCySER3J7aYXJIyM6iWktM6GMuUtSIsFakZANIszaK8bItDIycvuSExkQD974lm30Ng8MYgIeA1fr3ppCLBHeQ5jXd1GVIPpO4KeoGZaVlNEcUVfKhZeQjRUZKciWaTWMEcMsh19JruWfCqiXOWNNNHwwFOxF02BimtdP4VSO/WiZ3H1oGxbgkEC1ZLeIs2IjZNkxyJaYG95CrBkNMTYmi+0oUzOvDZe8jx2JIlEc7pFMYdMvg1jCEX692oyG/sT5aS6bC20MZlGRwSNqGodSPFB0pyW37HBtIDNRW563lN3mTRUjEbrihebiKyaYdywzFdJfyO7hKGLZ577XOy64iczP26MhiTEKDU36iZ0R0uaHBJ1y7Scc65WE3PR6fD6fHtYsc5P3zomV+07P/voL1rFw+x9xT3FgqhQ/ZGm4sVE7S9ZdlktQ91nXeLNjD+1+DLdau7g4AAA==
+    http_version: 
+  recorded_at: Mon, 13 Nov 2017 03:44:13 GMT
+recorded_with: VCR 3.0.3

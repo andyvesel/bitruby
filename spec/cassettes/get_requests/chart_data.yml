@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.poloniex.com/public?command=returnChartData&currencyPair&end=9999999999&period=14400&start=1405699200
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.0.0 x86_64) ruby/2.4.1p111
+      Host:
+      - www.poloniex.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 13 Nov 2017 03:40:18 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d8df46284b1d3fd35b57de762a6fd4c2e1510544417; expires=Tue, 13-Nov-18
+        03:40:17 GMT; path=/; domain=.poloniex.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Content-Encoding:
+      - gzip
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 3bceb5701f554b0f-GRU
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA6tWSi0qyi9SslLyzCtLzMlMUUguLSpKzUuuVChIzCzSU6oFAPQ7/hkiAAAA
+    http_version: 
+  recorded_at: Mon, 13 Nov 2017 03:43:30 GMT
+recorded_with: VCR 3.0.3
