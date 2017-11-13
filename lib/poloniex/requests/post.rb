@@ -15,9 +15,18 @@ module Poloniex
                                   end: end_time
       end
 
-      def self.volume
-        Poloniex::Connection.get command: Constants::Events::Get::VOLUME
-      end
+      BUY = 'buy'.freeze
+      CANCEL_ORDER = 'cancelOrder'.freeze
+      OPEN_ORDER = 'returnOpenOrders'.freeze
+      ORDER_TRADES = 'returnOrderTrades'.freeze
+      SELL = 'sell'.freeze
+      
+      def self.returnOpenOrders; end
+      def self.returnTradeHistory; end
+      def self.returnOrderTrades; end
+      def self.buy; end
+      def self.sell; end
+      def self.cancelOrder; end
     end
   end
 end

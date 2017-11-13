@@ -39,5 +39,11 @@ describe Poloniex::Requests::Get, 'test get request events' do
         expect(subject.ticker).not_to be nil
       end
     end
+
+    it '.volume' do
+      VCR.use_cassette('get_requests/volume', record: :once) do
+        expect(subject.volume).not_to be nil
+      end
+    end
   end
 end

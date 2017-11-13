@@ -11,6 +11,9 @@ module Constants
     module Post
       BALANCES = 'returnBalances'.freeze
       BUY = 'buy'.freeze
+      CANCEL_ORDER = 'cancelOrder'.freeze
+      OPEN_ORDER = 'returnOpenOrders'.freeze
+      ORDER_TRADES = 'returnOrderTrades'.freeze
       SELL = 'sell'.freeze
       TRADE_HISTORY = 'returnTradeHistory'.freeze
     end

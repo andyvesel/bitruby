@@ -29,6 +29,10 @@ module Poloniex
       def self.ticker
         Poloniex::Connection.get command: Constants::Events::Get::TICKER
       end
+
+      def self.volume
+        Poloniex::Connection.get command: Constants::Events::Get::VOLUME
+      end
     end
   end
 end
