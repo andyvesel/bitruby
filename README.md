@@ -9,13 +9,17 @@ A bot that lets you trade cryptocurrencies in your sleep
   - Endpoints to buy bitcoin
   - Endpoints to sell bitcoin
  
- ## Architecture
+ ### Architecture
  
  <img src="https://github.com/vbrazo/bitruby/blob/master/src/architecture%20I.png">
  
  ## Second part:
   - Set up account on Heroku and do the first deploy
   - Search about times series analysis and ruby
+
+ ### Architecture
+ 
+ <img src="https://github.com/vbrazo/bitruby/blob/master/src/architecture%20I.png">
   
  ## Backlog
 - Build a dashboard that displays:
