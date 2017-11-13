@@ -12,7 +12,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       User-Agent:
-      - rest-client/2.0.2 (darwin16.0.0 x86_64) ruby/2.4.1p111
+      - rest-client/2.0.2 (darwin16.0.0 x86_64) ruby/2.4.2p198
       Host:
       - www.poloniex.com
   response:
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 13 Nov 2017 03:41:01 GMT
+      - Mon, 13 Nov 2017 22:34:16 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -29,8 +29,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d59e5e09007b6d088f0362bb9ef2e519e1510544460; expires=Tue, 13-Nov-18
-        03:41:00 GMT; path=/; domain=.poloniex.com; HttpOnly
+      - __cfduid=dcc6bb73d2dae7d2810072b5217a7101d1510612455; expires=Tue, 13-Nov-18
+        22:34:15 GMT; path=/; domain=.poloniex.com; HttpOnly
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -40,11 +40,11 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 3bceb67fea3b814a-GRU
+      - 3bd53287bbb64bed-GRU
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAAAAAAAAA62X22obQQyG32WvzaLDaCT5HfoEJReGOKUXccBNoRDy7pVtClnNslSJ924X9mN0+n/N2/Ty9HQ8/5r239+m8+H1OO0nmCEeQ4BpNx2eX36fXq9fsYk59svX8+H04/jt52na07+Xw594ed9limQKeEM3pgrFPVOoNzBtrUBBoOEsCNwMtEThgdJN0KFXKGQDhRFVWiW7SENegJ3UqJSXCGhB4bkLMPciJfULtpldVUGlhqGeG0YEBSoNExShe1DU7kAZ2s4buRtZkSKL9M6IRAzENcqQXcTGDbBESSNAGPMYhTYqzUBgZJzHOKHXKDmkbiyMVgxJssI00CZU0oZI5DIxPKNZgHSj1ryCySER3J7aYXJIyM6iWktM6GMuUtSIsFakZANIszaK8bItDIycvuSExkQD974lm30Ng8MYgIeA1fr3ppCLBHeQ5jXd1GVIPpO4KeoGZaVlNEcUVfKhZeQjRUZKciWaTWMEcMsh19JruWfCqiXOWNNNHwwFOxF02BimtdP4VSO/WiZ3H1oGxbgkEC1ZLeIs2IjZNkxyJaYG95CrBkNMTYmi+0oUzOvDZe8jx2JIlEc7pFMYdMvg1jCEX692oyG/sT5aS6bC20MZlGRwSNqGodSPFB0pyW37HBtIDNRW563lN3mTRUjEbrihebiKyaYdywzFdJfyO7hKGLZ577XOy64iczP26MhiTEKDU36iZ0R0uaHBJ1y7Scc65WE3PR6fD6fHtYsc5P3zomV+07P/voL1rFw+x9xT3FgqhQ/ZGm4sVE7S9ZdlktQ91nXeLNjD+1+DLdau7g4AAA==
+        H4sIAAAAAAAAA62XzWrcUAyF38XrwVz968479AlKFoZMSheZwDSFQsi7V6S0jOXpBJnrnb34kI50JPltenl6Ol1+TMevb9NleT1Nx6nNLR7X1qbDtDy//Dy//vnK3I0A4utlOX87ffl+no7492X5FS/vh0zxNQVnYxCH5iVKz7EAShO1IqX3lBG0j6dC6W0dC8+q3a0h1yikI2IhyxRkNbEaxWQExXO/QCM2xhIF1ura7IJm3un/FGg3MIADUgLZpLSHokOE0VQkIJTwqNQo21ILE3Gt7cBHtB30DWWHBXDdMEozC4KFxLWOQUzKGJEISc3WyCNqjTxEmW337qg1Kg2oNfYUCyKjARVj6ZxicWASKKo7pO9o3Xd9BusOQjVdqKU5FaJAWL0ay9bVfZORX1P8FiXpAo29u9wx0q1YcIQDCHOlIxglqE07yp7GEIbKGZEPcADxhtKoS+s1SvZ0bAFlxyIle5oAIbIqdp2mcyoGum66Tq4pcoMy5PigPF+UJU4yK/bL+kCEmV1UOpVO3s5pI7VZXExI76QEfIMDefJG3RRda9HgZn7vcBKjDnASU77K9szv2GGJgo0BU5WAP9WXUv9a7JdmVoxmyI0YN0vOiT7dSQ+H6fH0vJwf8+8b/ttn18SPR0uTQhIF+hyHaGejkkgxW/L6F3c1LP2/Ndik5HGiu9+V+uH9N2uqMg/kDgAA
     http_version: 
-  recorded_at: Mon, 13 Nov 2017 03:44:13 GMT
+  recorded_at: Mon, 13 Nov 2017 22:37:32 GMT
 recorded_with: VCR 3.0.3
