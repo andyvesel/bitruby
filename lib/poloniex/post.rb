@@ -48,8 +48,11 @@ module Poloniex
     end
 
     def return_open_orders; end
+
     def return_trade_history; end
+
     def return_order_trades; end
+
     def cancel_order; end
   end
 end
